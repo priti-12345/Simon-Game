@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Simon Game</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="simongame style.css"/>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="glow-orb orb1"></div>
+  <div class="glow-orb orb2"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1 class="title">SIMON</h1>
+      <p class="subtitle">Memory Challenge</p>
+    </div>
+
+    <div class="score-board">
+      <div class="score-item">
+        <span class="score-label">LEVEL</span>
+        <span class="score-val" id="levelDisplay">0</span>
+      </div>
+      <div class="score-divider"></div>
+      <div class="score-item">
+        <span class="score-label">BEST</span>
+        <span class="score-val" id="bestDisplay">0</span>
+      </div>
+    </div>
+
+    <div class="game-wrap">
+      <div class="game-board" id="gameBoard">
+        <div class="btn-grid">
+          <div class="game-btn dim" id="pink"   data-id="pink"></div>
+          <div class="game-btn dim" id="blue"   data-id="blue"></div>
+          <div class="game-btn dim" id="green"  data-id="green"></div>
+          <div class="game-btn dim" id="purple" data-id="purple"></div>
+        </div>
+        <div class="center-circle">
+          <div class="center-text" id="centerText">PRESS&#10;START</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <span class="status-text" id="statusText">Press Start to play</span>
+    </div>
+    <div class="hint-text" id="hintText">Laptop flashes NEW color only — you repeat ALL from memory!</div>
+    <button class="start-btn" id="startBtn" onclick="sgStart()">Start Game</button>
+  </div>
+
+<script src="simon script.js"></script>
+</body>
+</html>
